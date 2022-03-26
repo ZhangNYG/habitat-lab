@@ -142,6 +142,8 @@ We also provide a docker setup for habitat. This works on machines with an NVIDI
 
 1. Start an interactive bash session inside the habitat docker: `docker run --runtime=nvidia -it fairhabitat/habitat:v1`
 
+sudo NV_GPU=1 nvidia-docker run  -it fairhabitat/habitat:v1
+
 1. Activate the habitat conda environment: `source activate habitat`
 
 1. Benchmark a forward only agent on the test scenes data: `cd habitat-api; python examples/benchmark.py`. This should print out an output like:
